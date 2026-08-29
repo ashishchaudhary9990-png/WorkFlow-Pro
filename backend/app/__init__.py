@@ -45,5 +45,9 @@ def create_app(config_class=Config):
     # Global context processor or database creation
     with app.app_context():
         db.create_all()
+        if User.query.first() is None:
+            from backend.seed import seed_data
+            seed_data()
+            print("Auto-seeded empty database with demo data.")
 
     return app
