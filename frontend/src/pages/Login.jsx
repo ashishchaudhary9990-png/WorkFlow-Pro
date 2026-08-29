@@ -45,7 +45,7 @@ const Login = () => {
                 type="text"
                 className="form-control"
                 style={{ paddingLeft: '40px', width: '100%' }}
-                placeholder="e.g. admin or lalit_dev"
+                placeholder="Enter your username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -62,7 +62,7 @@ const Login = () => {
                 type="password"
                 className="form-control"
                 style={{ paddingLeft: '40px', width: '100%' }}
-                placeholder="••••••••"
+                placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -81,11 +81,6 @@ const Login = () => {
           </button>
         </form>
 
-        <div style={{ marginTop: '24px', textAlign: 'center', fontSize: '13px', color: 'var(--text-muted)' }}>
-          <p style={{ fontWeight: 500 }}>Demo Credentials:</p>
-          <p style={{ marginTop: '4px' }}>Admin: <code style={{ color: 'var(--text-primary)' }}>admin</code> / <code style={{ color: 'var(--text-primary)' }}>admin123</code></p>
-          <p>Employee: <code style={{ color: 'var(--text-primary)' }}>lalit_dev</code> / <code style={{ color: 'var(--text-primary)' }}>password123</code></p>
-        </div>
       </div>
     </div>
   );
